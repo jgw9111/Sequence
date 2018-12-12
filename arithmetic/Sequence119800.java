@@ -15,7 +15,7 @@ Count is 199, Number is 1190, Sum is 118604
 Count is 200, Number is 1196, Sum is 119800
 S is 119800
  * */
-public class Sequence200 {
+public class Sequence119800 {
 	public static void main(String[] args) {
 		int A = 2; 
         int D = 6; 
@@ -23,10 +23,10 @@ public class Sequence200 {
         int N = 2; 
         int AN = 0;
         while(true){ 
-            AN = A+(N-1)*D; 
-            S += AN;
+            AN = A+(N-1)*D; // number
+            S += AN; // sum // S = S + AN
         	System.out.println("count는 "+N+" Number는 "+AN+" Sum은 "+S);
-        	N++; 
+        	N++; //count
             if( N< 201) {
         		continue;
         	}else {
