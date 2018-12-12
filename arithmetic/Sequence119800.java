@@ -1,5 +1,6 @@
 package arithmetic;
 /**
+ * 인덱스 		공차 		시리즈
 Count is 2, Number is 8, Sum is 10
 Count is 3, Number is 14, Sum is 24
 Count is 4, Number is 20, Sum is 44
@@ -17,24 +18,33 @@ S is 119800
  * */
 public class Sequence119800 {
 	public static void main(String[] args) {
-		int A = 2; 
-        int D = 6; 
-        int S = A; 
-        int N = 2; 
-        int AN = 0;
+		int A = 2;  // init
+        int D = 6; //diff
+        int S = A; // series
+        int N = 2; // count
+        int AN = 0; // term
         while(true){ 
-            AN = A+(N-1)*D; // number
+        	AN = A+ (N-1)*D;
+        	S += AN ;
+        	N++;
+        	System.out.printf("count is %d, Number is %d, Sum is %d \n",
+       			(N-1),AN,S);
+           if(N == 201) {
+        	   break;
+           }
+        	/* AN = A+(N-1)*D; // number
             S += AN; // sum // S = S + AN
-        	System.out.println("count는 "+N+" Number는 "+AN+" Sum은 "+S);
+        	System.out.printf("count is %d, Number is %d, Sum is %d \n",
+        			N,AN,S);
         	N++; //count
             if( N< 201) {
         		continue;
         	}else {
         		break;
-        	}
+        	}*/
             
         }
-        System.out.println("S is "+ S);
+        System.out.printf("S is %d", S);
 		
 	}
 }
