@@ -16,7 +16,7 @@ public class Factorial4037913 {
 			N++; //고정
 			F *= N;
 			S = S + F; // S += F;
-			//System.out.println("N의 값 "+ N);
+			System.out.println("N is "+ N+ " F is " + F + " S is "+ S);
 			
 			if(N == 10) {
 				break;

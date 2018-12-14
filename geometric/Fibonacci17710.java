@@ -15,7 +15,7 @@ public class Fibonacci17710 {
 		for(N=2;N<20;N++) {
 			C = A + B ;
 			System.out.println("C의 값 "+C);
-			S += C;
+			S += C; 
 			A = B ;
 			B = C ;
 			//C = B + C
